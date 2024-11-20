@@ -11,9 +11,10 @@
     <style>
       /* Set the image to a fixed size of 500x500 */
       .image.main img {
-        width: 500px; /* Set fixed width */
-        height: 500px; /* Set fixed height */
-        object-fit: contain; /* Ensure the image fits within the box */
+        max-width: 100%; /* Ensures the image does not exceed the container width */
+        height: auto; /* Maintains aspect ratio */
+        display: block; /* Removes extra spacing below the image */
+        margin: 0 auto; /* Centers the image */
       }
 
       /* Style for breadcrumbs */
